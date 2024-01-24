@@ -28,8 +28,18 @@ This means that if you film a video it looks like a mirror and doesn't flip it
 #### 5 
 
 ### Scenarios
+#### Hand colour
+#### Gloves
+#### Angles
 
-### Backgrounds
+### Backgrounds (variation in colours, noise, distance from camera)
+#### Close to camera
+#### Far from camera
+#### Outdoors greenery
+#### Indoors lots of objects
+#### Low light
+#### Bright light
+
 
 ## Presentation 
 
