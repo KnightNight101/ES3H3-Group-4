@@ -12,8 +12,8 @@ You should select your own set of hand gestures that should be recognized – yo
         o Explanation of your method – describe is the approach you used and why you choose it.
         o The testing of your system (what are the limitations of your system?)
         o Live demo of your system (have a recorded demo of your system as a backup in case there are problems)
-
-## 24/01/24
+## Meetings + Notes
+### 24/01/24
 
  - [For 31/01/24]Everyone try and develop the neural network so that we can build off of the most advanced / stable version
  - [For 25/01/24]Submit video of all gestures (see above for formats and gestures) 
@@ -22,18 +22,18 @@ You should select your own set of hand gestures that should be recognized – yo
 
 | Task           | Assigned to   | Current Status | Due by | Finished | 
 |----------------|---------------|----------------|-----------|-----------|
-| Description of system purpose (i.e. set of gestures to be recognized) |  | Not Assigned | - [ ] 
-| Description of final system (what is the technical approach) |  | Not Assigned | - [ ] 
-| Justification of key design decisions |  | Not Assigned | - [ ] 
-| Description of dataset(s) used |  | Not Assigned | - [ ] 
-| Details of training process (if applicable) |  | Not Assigned | - [ ] 
+| Description of system purpose (i.e. set of gestures to be recognized) |  | | Not Assigned | - [ ] 
+| Description of final system (what is the technical approach) | |  | Not Assigned | - [ ] 
+| Justification of key design decisions |  | | Not Assigned | - [ ] 
+| Description of dataset(s) used | |  | Not Assigned | - [ ] 
+| Details of training process (if applicable) | |  | Not Assigned | - [ ] 
 |----------------|---------------|----------------|-----------|
 | Number of gestures recognized |   |  | Not Assigned | - [ ] 
-| Reliability/robustness of system |  | Not Assigned | - [ ] 
-| Can the system be demonstrated live? |  | Not Assigned | - [ ] 
+| Reliability/robustness of system | |  | Not Assigned | - [ ] 
+| Can the system be demonstrated live? | |   | Not Assigned | - [ ] 
 |----------------|---------------|----------------|-----------|
-| Has the system been tested in a systematic way? |  | Not Assigned | - [ ] 
-| What are the limitations of the system? |  | Not Assigned | - [ ] 
+| Has the system been tested in a systematic way? | |  | Not Assigned | - [ ] 
+| What are the limitations of the system? | |  | Not Assigned | - [ ] 
 
 
 ## Data Collection
