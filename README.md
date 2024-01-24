@@ -42,3 +42,8 @@ This means that if you film a video it looks like a mirror and doesn't flip it
 ### Testing of developed system (30%):
 #### Has the system been tested in a systematic way?
 #### What are the limitations of the system?
+
+## 24/01/24
+
+ - [For 31/01/24]Everyone try and develop the neural network so that we can build off of the most advanced / stable version
+ - [For 25/01/24]Submit video of all gestures (see above for formats and gestures) 
