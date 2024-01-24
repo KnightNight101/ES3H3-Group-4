@@ -27,6 +27,10 @@ This means that if you film a video it looks like a mirror and doesn't flip it
 #### 4
 #### 5 
 
+### Scenarios
+
+### Backgrounds
+
 ## Presentation 
 
 ### Explanation of system (30%):
