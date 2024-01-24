@@ -7,41 +7,57 @@
 
 ### Video Format
 
-#### 1080p 30fps mp4
-#### 30fps
-#### mp4
-#### Non-Inverted
-
-This means that if you film a video it looks like a mirror and doesn't flip it
+1080p 30fps mp4
+30fps
+mp4
+Non-Inverted
+    This means that if you film a video it looks like a mirror and doesn't flip it
 
 ### Gestures
  
-#### Wave
-#### Thank you
-#### Rock
-#### Paper
-#### Scissors
-#### 1
-#### 2
-#### 3
-#### 4
-#### 5 
+Wave
+Thank you
+Rock
+Paper
+Scissors
+1
+2
+3
+4
+5 
 
 ### Scenarios
-#### Hand colour
-#### Gloves
-#### Angles
+Hand colour
+Gloves
+Angles
 
 ### Backgrounds (variation in colours, noise, distance from camera)
-#### Close to camera
-#### Far from camera
-#### Outdoors greenery
-#### Indoors lots of objects
-#### Low light
-#### Bright light
+Close to camera
+Far from camera
+Outdoors greenery
+Indoors lots of objects
+Low light
+Bright light
 
 
 ## Presentation 
+
+| Task           | Assigned to   | Current Status | Due by | Finished | 
+|----------------|---------------|----------------|-----------|-----------|
+| Description of system purpose (i.e. set of gestures to be recognized) |  | in progress | - [x] ok?
+| Description of final system (what is the technical approach) |  | in progress | [x] item1<br/>[ ] item2
+| Justification of key design decisions |   | in progress | <ul><li>- [x] item1</li><li>- [ ] item2</li></ul>
+| Description of dataset(s) used |   | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+| Details of training process (if applicable) |   | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+|----------------|---------------|----------------|-----------|
+| Number of gestures recognized |   | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+| Reliability/robustness of system |   | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+| Can the system be demonstrated live? |   | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+|----------------|---------------|----------------|-----------|
+| Has the system been tested in a systematic way? |   | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+| What are the limitations of the system? |   | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+
+
 
 ### Explanation of system (30%):
 #### Description of system purpose (i.e. set of gestures to be recognized)
