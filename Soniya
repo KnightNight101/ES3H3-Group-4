@@ -1,0 +1,61 @@
+% Extract frames from the video
+obj = VideoReader('rock.mp4');
+vid = read(obj);
+frames = obj.NumberOfFrames;
+
+% Save frames into the folder
+for x = 1 : frames
+    frameFileName = fullfile(folderName, strcat('frame-', num2str(x), '.png'));
+    imwrite(vid(:,:,:,x), frameFileName);
+end
+%save it in a folder called 1
+%%
+% Define the path to the root folder of your hand gesture dataset
+dataDir = '\\doozer.ads.warwick.ac.uk\user64\u\u2025486\Documents\MATLAB\Year 3\ESH3\Assignment3\gesture';
+
+% Create an imageDatastore for the dataset, with labels assigned based on folder names
+imds = imageDatastore(dataDir, 'IncludeSubfolders', true, 'LabelSource', 'foldernames');
+
+
+% Split the dataset into training and validation sets (adjust as needed)
+[trainingSet, validationSet, testSet] = splitEachLabel(imds, 0.7, 0.15, 0.15, 'randomized');
+
+resizetraindata = augmentedImageDatastore([224 224],trainingSet);
+
+resizevalidationndata = augmentedImageDatastore([224 224],validationSet);
+
+resizetestdata = augmentedImageDatastore([224 224],testSet);
+
+% Load pre-trained GoogleNet model
+net = googlenet;
+
+lgraphModified = layerGraph(net);
+
+% Modify layers (example: replace the last fully connected layer)
+new_fc = fullyConnectedLayer(5, 'Name', 'new_fc');
+lgraphModified = replaceLayer(lgraphModified, 'loss3-classifier', new_fc);
+
+
+new_output = classificationLayer('Name', 'new_output');
+lgraphModified= replaceLayer(lgraphModified, 'output', new_output);
+
+
+% Specify training options
+options = trainingOptions('sgdm','MaxEpochs', 10, ...
+    'MiniBatchSize', 32, ...
+    'InitialLearnRate', 1e-4, ...
+    'Shuffle', 'every-epoch', ...
+    'ValidationData', resizevalidationndata, ...
+    'ValidationFrequency', 30, ...
+    'Verbose', true, ...
+    'Plots', 'training-progress');
+
+
+% Fine-tune the pre-trained GoogleNet model
+[net, info] = trainNetwork(resizetraindata, lgraphModified, options);
+
+predict = classify(net, resizetestdata); %classify
+
+resultpredict = testSet.Labels;
+nnz((predict == resultpredict)/numel(predict));
+confusionchart(resultpredict,predict)
